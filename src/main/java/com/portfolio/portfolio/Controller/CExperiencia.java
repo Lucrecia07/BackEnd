@@ -50,8 +50,8 @@ public class CExperiencia {
         
         if(StringUtils.isBlank(dtoExp.getDescripcionE()))
             return new ResponseEntity(new Mensaje("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
-        if(sExperiencia.existsByDescripcionE(dtoExp.getDescripcionE()))
-            return new ResponseEntity(new Mensaje("Esa experiencia ya existe"), HttpStatus.BAD_REQUEST);
+        /*if(sExperiencia.existsByDescripcionE(dtoExp.getDescripcionE()))
+            return new ResponseEntity(new Mensaje("Esa descripción ya existe"), HttpStatus.BAD_REQUEST);*/
         
         Experiencia experiencia = new Experiencia(dtoExp.getNombreE(), dtoExp.getDescripcionE());
         sExperiencia.save(experiencia);
@@ -72,11 +72,11 @@ public class CExperiencia {
         //No puede estar vacío.
         if(StringUtils.isBlank(dtoExp.getNombreE()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        
+        /*
         //Compara descripción de experiencias.
         if(sExperiencia.existsByDescripcionE(dtoExp.getDescripcionE()) && sExperiencia.getByDescripcionE(dtoExp.getDescripcionE()).get().getId() != id)
             return new ResponseEntity(new Mensaje("Esa experiencia ya existe"), HttpStatus.BAD_REQUEST);
-        
+        */
         //No puede estar vacío.
         if(StringUtils.isBlank(dtoExp.getDescripcionE()))
             return new ResponseEntity(new Mensaje("La descripción es obligatoria"), HttpStatus.BAD_REQUEST);
