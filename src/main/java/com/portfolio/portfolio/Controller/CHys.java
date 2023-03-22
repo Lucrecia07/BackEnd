@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -19,9 +20,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/skill")
 //@CrossOrigin(origins = "http://localhost:4200")
 @CrossOrigin(origins = {"https://frontend-e8f34.web.app", "http://localhost:4200"})
-@RequestMapping("/skill")
 public class CHys {
 
     @Autowired
@@ -36,7 +37,7 @@ public class CHys {
     @GetMapping("/detail/{id}")
     public ResponseEntity<Hys> getById(@PathVariable("id") int id) {
         if (!sHys.existsById(id)) {
-            return new ResponseEntity(new Mensaje("No existe"), HttpStatus.NOT_FOUND);
+            return new ResponseEntity(new Mensaje("El ID no existe"), HttpStatus.NOT_FOUND);
         }
         Hys hys = sHys.getOne(id).get();
         return new ResponseEntity(hys, HttpStatus.OK);
@@ -81,7 +82,8 @@ public class CHys {
         sHys.save(hys);
         return new ResponseEntity(new Mensaje("Skill actualizada"), HttpStatus.OK);
     }
-
+    
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         //Valida si existe ID.
         if (!sHys.existsById(id)) {

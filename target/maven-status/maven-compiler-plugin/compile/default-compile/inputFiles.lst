@@ -3,7 +3,9 @@ C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfol
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\PortfolioApplication.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\Dto\NuevoUsuario.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Controller\CExperiencia.java
+C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Entity\Proyecto.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Repository\IPersonaRepository.java
+C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Controller\CProyecto.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\MainSecurity.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Controller\PersonaController.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Repository\REducacion.java
@@ -21,6 +23,7 @@ C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfol
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\jwt\JwtEntryPoint.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\Entity\UsuarioPrincipal.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\jwt\JwtTokenFilter.java
+C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Repository\RProyecto.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\Controller\AuthController.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Controller\CHys.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\Dto\JwtDto.java
@@ -36,4 +39,6 @@ C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfol
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Service\SExperiencia.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Dto\DtoEducacion.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\Dto\LoginUsuario.java
+C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Service\SProyecto.java
 C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Security\Service\UserDetailsImpl.java
+C:\Users\PCFAMILIA\Desktop\Portfolio\BackEnd\src\main\java\com\portfolio\portfolio\Dto\DtoProyecto.java
